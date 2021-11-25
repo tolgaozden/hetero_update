@@ -1,0 +1,41 @@
+%========================================================================================%
+%create matrices for the REE system: 
+% A X_ = B X_{t-1} + C E_t X_{t+1} + D eps_t; 
+% eps_t = RHO eps_{t-1} + eta_t ;
+
+
+clear;clc;close all;
+syms kappa tau phi_pi phi_y phi_dy rho_y rho_pi rho_r iota_y iota_p beta_;
+
+syms yy pinf rr u_y u_pi ...
+     y_p pi_p r_p u_y_p u_pi_p...
+    y_m pi_m r_m u_y_m u_pi_m ...
+    eps_y eps_pi eps_r;
+
+
+
+
+%========================================================================================%
+%REGIME 1: ACTIVE TAYLOR RULE, EXPECTATIONS BASED ON NOMINAL RATES 
+
+fs1 = -yy+(1-iota_y)*y_p+iota_y*y_m-(1/tau)*(rr-pi_p)+u_y==0;
+fs2 = -pinf+beta_* ((1-iota_p)*pi_p+iota_p*pi_m)+kappa*yy+u_pi==0;
+fs3 = -rr+rho_r*r_m+(1-rho_r)*(phi_pi*pinf+phi_y*yy)+eps_r+phi_dy*(yy-y_m)==0;
+fs4 = -u_y+rho_y*u_y_m+eps_y==0;
+fs5 = -u_pi+rho_pi*u_pi_m+eps_pi==0;
+
+ equations = [fs1 fs2 fs3 fs4 fs5];
+
+contemp= [yy pinf rr u_y u_pi]; %7 variables--matrix A
+lagged = [y_m pi_m r_m u_y_m u_pi_m]; % 9 variables--matrix 7
+forward = [y_p pi_p r_p u_y_p u_pi_p]; % 9 variables--matrix 7
+shocks = [u_y u_pi];
+
+
+AA1 = equationsToMatrix(equations, contemp);
+AA1 = -AA1; 
+
+BB1 = equationsToMatrix(equations,lagged);
+CC1 = equationsToMatrix(equations,forward);
+DD1 = equationsToMatrix(equations,shocks);
+RHO=[rho_y,0;0,rho_p]; %2 AR(1) shocks

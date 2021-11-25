@@ -1,0 +1,18 @@
+\BOOKMARK [1][-]{section.1}{Introduction}{}% 1
+\BOOKMARK [1][-]{section.2}{Literature Review}{}% 2
+\BOOKMARK [1][-]{section.3}{Model Setup}{}% 3
+\BOOKMARK [1][-]{section.4}{Estimations}{}% 4
+\BOOKMARK [2][-]{subsection.4.1}{Parameter Estimations, Priors and Posteriors}{section.4}% 5
+\BOOKMARK [2][-]{subsection.4.2}{Figures and Tables for 4-regime VAR\(1\) Model}{section.4}% 6
+\BOOKMARK [2][-]{subsection.4.3}{Conditional Impulse Responses}{section.4}% 7
+\BOOKMARK [1][-]{section.5}{Counterfactual Experiments and Monte Carlo Simulations}{}% 8
+\BOOKMARK [2][-]{subsection.5.1}{Counterfactual I: Estimated shocks, different fractions}{section.5}% 9
+\BOOKMARK [2][-]{subsection.5.2}{Counterfactual II: Estimated shocks, different fractions and gain values \(only averages\)}{section.5}% 10
+\BOOKMARK [2][-]{subsection.5.3}{Counterfactual III: Randomized Shocks, post 2019Q4 period}{section.5}% 11
+\BOOKMARK [2][-]{subsection.5.4}{Counterfactual IV: post 2019Q4 period with large supply and demand shocks.}{section.5}% 12
+\BOOKMARK [2][-]{subsection.5.5}{Counterfactual IV: post 2019Q4 period with different fractions of de-anchored expectations.}{section.5}% 13
+\BOOKMARK [1][-]{section.6}{Conclusion}{}% 14
+\BOOKMARK [1][-]{appendix.A}{Data Descriptions}{}% 15
+\BOOKMARK [1][-]{appendix.B}{Posterior Distributions, Diagnostic Checks and Alternative Estimations}{}% 16
+\BOOKMARK [1][-]{appendix.C}{Estimated Time Series of Other Learning Variables }{}% 17
+\BOOKMARK [1][-]{appendix.D}{Estimation Method Description}{}% 18

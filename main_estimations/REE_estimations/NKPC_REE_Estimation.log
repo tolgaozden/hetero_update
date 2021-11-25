@@ -1,0 +1,211 @@
+Starting Dynare (version 4.5.7).
+Starting preprocessing of the model file ...
+Found 8 equation(s).
+Evaluating expressions...done
+Computing static model derivatives:
+ - order 1
+Computing dynamic model derivatives:
+ - order 1
+ - order 2
+Processing outputs ...
+done
+Preprocessing completed.
+
+Initial value of the log posterior (or likelihood): 89.0705
+Gradient norm 0.98731
+Minimum Hessian eigenvalue 1.5323
+Maximum Hessian eigenvalue 4842054.4385
+ 
+Iteration 1
+Correct for low angle: 0.00353203
+Predicted improvement:        0.000001920
+lambda =          1; f =          -89.0705143
+lambda =    0.33333; f =          -89.0705176
+Norm of dx 0.00077775
+Predicted improvement:        0.487389245
+lambda =          1; f =          -88.1150725
+lambda =    0.33333; f =          -88.9663338
+lambda =    0.11111; f =          -89.0592642
+lambda =   0.037037; f =          -89.0693684
+lambda =   0.012346; f =          -89.0704204
+lambda =  0.0041152; f =          -89.0705138
+lambda =  0.0013717; f =          -85.5168004
+lambda = 0.00045725; f =          -88.7659710
+lambda = 0.00015242; f =          -89.0389136
+lambda = 5.0805e-05; f =          -89.0670780
+lambda = 1.6935e-05; f =          -89.0701372
+lambda =  5.645e-06; f =          -89.0704751
+lambda = 1.8817e-06; f =          -89.0705128
+lambda = 6.2723e-07; f =          -89.0705170
+lambda = 2.0908e-07; f =          -89.0705175
+lambda = 6.9692e-08; f =          -89.0705176
+lambda = 2.3231e-08; f =          -89.0705176
+lambda = 7.7435e-09; f =          -89.0705176
+lambda = 2.5812e-09; f =          -89.0705176
+
+lambda =
+
+    -6.272254743863071e-07
+
+lambda = -6.2723e-07; f =          -89.0705171
+lambda = -2.0908e-07; f =          -89.0705175
+lambda = -6.9692e-08; f =          -89.0705176
+lambda = -2.3231e-08; f =          -89.0705176
+Norm of dx    0.98731
+Sequence of univariate steps!!
+Try diagonal Hessian
+Predicted improvement:        0.000000358
+lambda =          1; f =          -89.0705174
+lambda =    0.33333; f =          -89.0705176
+lambda =    0.11111; f =          -89.0705176
+lambda =   0.037037; f =          -89.0705176
+lambda =   0.012346; f =          -89.0705176
+lambda =  0.0041152; f =          -89.0705176
+lambda =  0.0013717; f =          -89.0705176
+lambda = 0.00045725; f =          -89.0705176
+lambda = 0.00015242; f =          -89.0705176
+lambda = 5.0805e-05; f =          -89.0705176
+lambda = 1.6935e-05; f =          -89.0705176
+lambda =  5.645e-06; f =          -89.0705176
+Norm of dx 5.4307e-05
+Try gradient direction
+Predicted improvement:        0.000048739
+lambda =          1; f =          -89.0570380
+lambda =    0.33333; f =          -89.0690337
+lambda =    0.11111; f =          -89.0703512
+lambda =   0.037037; f =          -89.0704984
+lambda =   0.012346; f =          -89.0705152
+lambda =  0.0041152; f =          -89.0705173
+lambda =  0.0013717; f =          -89.0705175
+lambda = 0.00045725; f =          -89.0705176
+lambda = 0.00015242; f =          -89.0705176
+lambda = 5.0805e-05; f =          -89.0705176
+lambda = 1.6935e-05; f =          -89.0705176
+lambda =  5.645e-06; f =          -89.0705176
+lambda = 1.8817e-06; f =          -89.0705176
+lambda = 6.2723e-07; f =          -89.0705176
+lambda = 2.0908e-07; f =          -89.0705176
+lambda = 6.9692e-08; f =          -89.0705176
+lambda = 2.3231e-08; f =          -89.0705176
+lambda = 7.7435e-09; f =          -89.0705176
+lambda = 2.5812e-09; f =          -89.0705176
+Norm of dx 9.8731e-05
+No further improvement is possible!
+Actual dxnorm 0.00025951
+FVAL          -89.0705
+Improvement   5.827e-07
+Ftol          1e-05
+Htol          1e-05
+Gradient norm  0.98731
+Minimum Hessian eigenvalue 1.5323
+Maximum Hessian eigenvalue 4842054.4385
+Estimation successful.
+
+Final value of minus the log posterior (or likelihood):-89.070518 
+
+RESULTS FROM POSTERIOR ESTIMATION
+parameters
+     prior mean     mode    s.d. prior pstdev
+
+pi_bar   0.000   0.6206  0.0673 unif  2.0000 
+r_bar    0.000   0.6379  0.1949 unif  2.0000 
+kappa    0.050   0.0023  0.0009 beta  0.0250 
+tau      2.000   2.4082  0.3953 gamm  0.5000 
+phi_pi   1.500   1.7095  0.2349 gamm  0.2500 
+phi_y    0.250   0.1280  0.0424 gamm  0.1000 
+phi_dy   0.250   0.2151  0.0269 gamm  0.1000 
+rho_pi   0.500   0.6026  0.1027 beta  0.2000 
+rho_y    0.500   0.9684  0.0124 beta  0.2000 
+rho_r    0.500   0.9209  0.0150 beta  0.2000 
+iota_y   0.250   0.2781  0.0366 beta  0.1000 
+iota_p   0.250   0.2930  0.0633 beta  0.1000 
+
+standard deviation of shocks
+     prior mean     mode    s.d. prior pstdev
+
+eps_y    0.100   0.0480  0.0084 invg  2.0000 
+eps_pi   0.100   0.0479  0.0087 invg  2.0000 
+eps_r    0.100   0.1307  0.0113 invg  2.0000 
+
+
+Log data density [Laplace approximation] is 46.718388.
+
+
+MODEL SUMMARY
+
+  Number of variables:         8
+  Number of stochastic shocks: 3
+  Number of state variables:   5
+  Number of jumpers:           2
+  Number of static variables:  3
+
+
+MATRIX OF COVARIANCE OF EXOGENOUS SHOCKS
+Variables       eps_y    eps_pi     eps_r
+eps_y        0.002304  0.000000  0.000000
+eps_pi       0.000000  0.002296  0.000000
+eps_r        0.000000  0.000000  0.017093
+
+POLICY AND TRANSITION FUNCTIONS
+                                   y              pi               r             u_y            u_pi    gap_detrend2         pinfobs            robs
+Constant                           0               0               0               0               0               0        0.620599        0.637917
+r(-1)                      -2.308979       -0.109331        0.386140               0               0       -2.308979       -0.109331        0.386140
+u_y(-1)                     7.782510        0.585681        1.831767        0.968357               0        7.782510        0.585681        1.831767
+u_pi(-1)                    0.299738        1.932723        0.328873               0        0.602554        0.299738        1.932723        0.328873
+y(-1)                       0.870072        0.027445       -0.015418               0               0        0.870072        0.027445       -0.015418
+pi(-1)                     -0.088090        0.394544        0.033520               0               0       -0.088090        0.394544        0.033520
+eps_y                       8.036819        0.604819        1.891624        1.000000               0        8.036819        0.604819        1.891624
+eps_pi                      0.497445        3.207550        0.545798               0        1.000000        0.497445        3.207550        0.545798
+eps_r                      -2.507335       -0.118723        0.419312               0               0       -2.507335       -0.118723        0.419312
+
+
+MOMENTS OF SIMULATED VARIABLES
+VARIABLE                  MEAN       STD. DEV.        VARIANCE        SKEWNESS        KURTOSIS
+y                     0.211955        2.514363        6.322022        0.075934        0.093800
+pi                    0.011738        0.323489        0.104645        0.122568       -0.044854
+r                     0.038197        0.553508        0.306371        0.193105        0.082001
+u_y                   0.014383        0.193833        0.037571        0.185351        0.070971
+u_pi                 -0.001031        0.059149        0.003499        0.049716       -0.019653
+gap_detrend2          0.211955        2.514363        6.322022        0.075934        0.093800
+pinfobs               0.632337        0.323489        0.104645        0.122568       -0.044854
+robs                  0.676114        0.553508        0.306371        0.193105        0.082001
+
+
+CORRELATION OF SIMULATED VARIABLES
+VARIABLE                   y            pi             r           u_y          u_pi  gap_detrend2       pinfobs          robs
+y                     1.0000        0.5591        0.7732        0.8406       -0.0370        1.0000        0.5591        0.7732
+pi                    0.5591        1.0000        0.6307        0.5802        0.7466        0.5591        1.0000        0.6307
+r                     0.7732        0.6307        1.0000        0.9834        0.0856        0.7732        0.6307        1.0000
+u_y                   0.8406        0.5802        0.9834        1.0000       -0.0013        0.8406        0.5802        0.9834
+u_pi                 -0.0370        0.7466        0.0856       -0.0013        1.0000       -0.0370        0.7466        0.0856
+gap_detrend2          1.0000        0.5591        0.7732        0.8406       -0.0370        1.0000        0.5591        0.7732
+pinfobs               0.5591        1.0000        0.6307        0.5802        0.7466        0.5591        1.0000        0.6307
+robs                  0.7732        0.6307        1.0000        0.9834        0.0856        0.7732        0.6307        1.0000
+
+
+AUTOCORRELATION OF SIMULATED VARIABLES
+VARIABLE             1       2       3       4       5       6       7       8       9      10
+y               0.9767  0.9393  0.8974  0.8549  0.8130  0.7729  0.7353  0.7010  0.6693  0.6399
+pi              0.8596  0.6833  0.5366  0.4320  0.3582  0.3084  0.2737  0.2483  0.2280  0.2098
+r               0.9768  0.9472  0.9168  0.8865  0.8570  0.8289  0.8024  0.7772  0.7534  0.7305
+u_y             0.9692  0.9388  0.9093  0.8799  0.8511  0.8230  0.7965  0.7717  0.7490  0.7262
+u_pi            0.5929  0.3516  0.2011  0.1174  0.0626  0.0322  0.0134 -0.0012 -0.0109 -0.0211
+gap_detrend2    0.9767  0.9393  0.8974  0.8549  0.8130  0.7729  0.7353  0.7010  0.6693  0.6399
+pinfobs         0.8596  0.6833  0.5366  0.4320  0.3582  0.3084  0.2737  0.2483  0.2280  0.2098
+robs            0.9768  0.9472  0.9168  0.8865  0.8570  0.8289  0.8024  0.7772  0.7534  0.7305
+
+
+
+VARIANCE DECOMPOSITION SIMULATING ONE SHOCK AT A TIME (in percent)
+                           eps_y            eps_pi             eps_r  Tot. lin. contr.
+y                          65.54              6.99             22.97             95.49
+pi                         32.42             62.13              4.23             98.79
+r                          98.51              1.11              1.47            101.09
+u_y                       100.01              0.00              0.00            100.01
+u_pi                        0.00            100.01              0.00            100.01
+gap_detrend2               65.54              6.99             22.97             95.49
+pinfobs                    32.42             62.13              4.23             98.79
+robs                       98.51              1.11              1.47            101.09
+Note: numbers do not add up to 100 due to non-zero correlation of simulated shocks in small samples
+
+Total computing time : 0h00m04s

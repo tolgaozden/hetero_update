@@ -1,0 +1,84 @@
+
+
+\documentclass[11pt]{article}
+\usepackage[utf8x]{inputenc}
+\usepackage{mathrsfs}
+\textwidth 160mm \textheight 240mm \hoffset -1.4 cm \voffset -1.6cm
+\usepackage{graphicx}
+\usepackage[table]{xcolor}
+\graphicspath{ {figures/} }
+\usepackage[margin=0.9in]{geometry}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{subfloat}
+\usepackage[english]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amsfonts,amssymb}
+\usepackage{pdflscape}
+\usepackage{natbib}
+\usepackage{verbatim}
+\usepackage{lipsum}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage{bm}
+\usepackage{changepage}
+\usepackage{lscape}
+\usepackage{soul}
+\usepackage{float}
+\usepackage{rotating}
+\usepackage{graphicx}
+\usepackage{setspace}
+\usepackage[color]{changebar}
+\numberwithin{equation}{section}
+\usepackage{appendix}
+\usepackage{authblk}
+\usepackage{hyperref}
+\usepackage[most]{tcolorbox}
+\usepackage{placeins}
+\usepackage{caption}
+\usepackage{subfig}
+\usepackage{setspace}
+\onehalfspacing
+
+
+\hypersetup{colorlinks,allcolors=blue}
+
+\title{Central Bank Credibility and Learning in a Regime-switching Model}
+\author{Tolga Ozden\footnote{T.ozden@uva.nl, University of Amsterdam}}
+
+\begin{document}
+\maketitle
+
+This paper extends the work of Ozden \& Wouters (2020) to assess the effects of central bank credibility and forward guidance for the U.S. and Eurozone with adaptively learning agents. Accordingly, monetary policy is subject to regime switches, which is captured as a Markov-switching process. Agents do not directly observe such regime shifts by monetary policy, but instead gradually learn about them based on past observations. In this setup, the ZLB constraint is captured as a switch from an active Taylor rule to a passive monetary policy (pegged nominal rates) as follows: 
+
+\begin{equation}
+ r_t =  \rho(s_t) r_{t-1} + (1-\rho(s_t)) (r_{\pi}(s_t) \pi_t  + r_y(s_t) x_y ) + r_{dy}(s_t) (\Delta x_t)+ \epsilon_t^r(s_t), 
+\end{equation}
+
+with the normal (active Taylor rule) regime given as $\rho(s_t=1)>0$, $r_{\pi}(s_t=1)>1$, $r_y(s_t=1)>0$, $r_{dy}(s_t=1)>0$ and $\epsilon_t^r(s_t=1)$ an AR(1) process with persistence $\rho_r$, where the i.i.d. disturbances have a standard deviation of  $\eta_{r_N}$. The ZLB regime is given as a pegged interest rate rule with $\rho(s_t=2)=0$, $r_{\pi}(s_t=2)=0$, $r_y(s_t=2)=0$, $r_{dy}(s_t=2)=0$ and $\epsilon_t^r(s_t=2)$ a white noise process with standard deviation $\eta_{r_{ZLB}}$. The regime shifts are determined endogenously with the following transition probabilities: 
+
+$$
+p_{11}(t)= \frac{\theta}{\theta+exp(-\phi(r_t^{*}-\underline{r}))},  \\
+p_{22}(t)= \frac{\theta}{\theta+exp(\phi(r_t^{*}-\underline{r}))}, 
+$$
+with $1-p_{11}$ the exit probability from the normal regime, and $1-p_{22}$ the exit probability from the ZLB regime. $r_t^{*}$ denotes the central bank's desired policy rate, or the shadow rate, defined as: 
+
+$$
+\begin{cases}
+r_t^{*}(s_t=1)=\rho r_{t-1} + (1-\rho) (\phi_{\pi} \pi_t + \phi_y x_t) + \phi_{dy} \Delta x_t, \\
+r_t^{*}(s_t=2)=\rho r_{t-1}^{*} + (1-\rho) (\phi_{\pi} \pi_t + \phi_y x_t) + \phi_{dy} \Delta x_t, \\
+\end{cases}
+$$
+with $\pi_t$ and $x_t$ inflation and output gap processes respectively. These equations define the shadow rate as the interest rate that would prevail in the absence of monetary policy shocks and the ZLB constraint. In the normal regime, the shadow rate is smoothed over the observed interest rates, which means the deviations of realized interest rates from the shadow rate are only temporary and are captured by the monetary policy shocks. In the ZLB regime, the shadow rate is smoothed over the its own lag, which captures the central bank's desire to keep the interest rate \textit{lower for longer}. 
+
+The model is accompanied by another layer of regime switch, which is in the agents' belief models. This is captured by allowing the agents to select from two different belief models when forming their expectations. In the first regime, the agents use a trivariate VAR(1) model in inflation, output gap and nominal interest rates. In the second regime, the agents replace the nominal interest rates in the VAR model with the shadow rate, which is interpreted as the agents' perceived target interest rate. This corresponds to an extended version of the heterogeneous expectations frameworks analyzed in Goy et. al. (2018) and Hommes \& Lustenhouwer (2019). The main difference here is that, differences in belief models are formulated as regime switches rather than heterogeneous expectations.
+
+During normal times when the ZLB constraint is not binding, the shadow rate remains close to the nominal interest rate (where the only difference between the two comes from the monetary policy shocks), and therefore agents' choice on the two belief models makes little difference. Once the ZLB constraint becomes active, the shadow rate significantly deviates from the nominal rate, where agents' beliefs about the central bank's desired interest rate becomes important. Using the VAR model with nominal rates reflects a belief that the central bank is indeed constrained by the zero lower bound, whereas using the VAR model with the shadow rates reflect a belief that the central bank's desired target rate still matters for the economy. The weight on the latter can be interpreted as a central bank credibility measure, where the shadow rate's impact on the economy can be seen as a proxy for the bank's forward guidance. As in Goy et. al. (2018) and Hommes \& Lustenhouwer (2019), the agents' are assumed to choose between the belief models based on their past performance. This implies that the regime probabilities are endogenously determined based on the forecasting performance of the models. 
+
+
+
+\bibliographystyle{apalike2}
+
+
+
+\end{document}
